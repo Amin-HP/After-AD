@@ -30,9 +30,19 @@ All tabs are connected — you can send text between any of them with one click.
 
 ## Installation
 
-### Use the pre-built app
+### Build and install
 
-1. Download `After AD-1.0.0-arm64.dmg` from the `release/` folder (or drag `After AD.app` from `release/mac-arm64/` to `/Applications`).
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Build the app
+npm run electron:build
+```
+
+After the build completes:
+
+1. Drag `release/mac-arm64/After AD.app` to `/Applications`.
 2. Open the app and go to **Settings** (gear icon, top-right).
 3. Enter your OpenAI API key. It is stored locally in your browser's `localStorage` — never sent anywhere except OpenAI.
 
